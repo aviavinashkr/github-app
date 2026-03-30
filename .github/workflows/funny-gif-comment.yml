@@ -20,7 +20,7 @@ jobs:
               'https://media.giphy.com/media/26tPzgdFu1c0rbTBu/giphy.gif'
             ];
             const randomGif = gifs[Math.floor(Math.random() * gifs.length)];
-            await github.issues.createComment({
+            await github.rest.issues.createComment({
               ...context.issue,
               body: `Here's a funny GIF for you! ${randomGif}`
             });
