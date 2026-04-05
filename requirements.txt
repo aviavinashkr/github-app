@@ -1,0 +1,4 @@
+# Add your Python dependencies here
+# Example:
+# click==8.1.0
+# pyyaml==6.0
