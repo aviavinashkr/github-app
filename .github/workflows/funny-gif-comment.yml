@@ -12,9 +12,8 @@ jobs:
     steps:
       - name: Add Funny GIF Comment
         uses: actions/github-script@v5
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }}
         with:
+          github-token: ${{ secrets.TOKEN }}
           script: |
             const gifs = [
               'https://media.giphy.com/media/3o72F2dB6Kx0Lc3D0g/giphy.gif',
